@@ -32,6 +32,12 @@
       {%- include social.html -%}
     </div>
 
+    {% if site.github.private != true and site.github.license %}
+    <div class="open-source">
+      This site is open source. {% github_edit_link "Improve this page" %}.
+    </div>
+    {% endif %}
+
   </div>
 
 </footer>

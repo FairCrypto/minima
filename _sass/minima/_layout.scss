@@ -147,6 +147,11 @@
   color: $brand-color;
 }
 
+.open-source {
+  @include relative-font-size(0.75);
+  margin-top: $spacing-unit * .5;
+}
+
 .footer-col {
   margin-bottom: $spacing-unit * .5;
 }
