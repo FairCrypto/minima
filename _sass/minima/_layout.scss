@@ -149,7 +149,8 @@
 
 .open-source {
   @include relative-font-size(0.75);
-  margin-top: $spacing-unit * .5;
+  margin-top: $spacing-unit * .6;
+  text-align: center;
 }
 
 .footer-col {
