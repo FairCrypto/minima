@@ -14,7 +14,9 @@
 <!--        </p>-->
       {%- if site.author %}
         <ul class="contact-list">
-          {% if site.author.name -%}
+          {% if site.author.name and site.author.url -%}
+            <li class="p-name"><a href="{{ site.author.url | escape }}">{{ site.author.name | escape }}</a></li>
+          {% else if site.author.name -%}
             <li class="p-name">{{ site.author.name | escape }}</li>
           {% endif -%}
           {% if site.author.email -%}
